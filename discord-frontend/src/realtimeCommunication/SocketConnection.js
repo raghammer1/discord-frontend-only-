@@ -11,7 +11,7 @@ let socket = null;
 
 export const connectWithSocketServer = (userDetails) => {
   const jwtToken = userDetails.token;
-  socket = io('http://localhost:5002', {
+  socket = io('https://discord-only-backend-112.onrender.com', {
     auth: {
       token: jwtToken,
     },
